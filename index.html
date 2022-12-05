@@ -17,13 +17,21 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>  
  body {
-    background-color:hsl(225, 100%, 94%);
+    background:hsl(225, 100%, 94%);
+
+    background-image: url("./images/pattern-background-desktop.svg");
     display: flex;
     flex-flow: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
-  } .card {
+  }
+  @media (max-width: 480px) {
+    body {
+        background-image: url("./images/pattern-background-mobile.svg");
+    }
+}
+  .card {
     background-color:hsl(0, 0%, 100%);
   }
     .attribution { font-size: 11px; text-align: center; }
